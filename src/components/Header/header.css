@@ -1,55 +1,50 @@
 .header {
-  background-color:  #afbcaf;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 20px;  
-  height : 100px ;   
-  width : 100%;
-  display : flex ;
-  position : sticky ; 
-  top : 0 ;  
-  z-index: 1000;
-  
+	background-color: #afbcaf;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 20px;
+	top: 0;
+	left: 0;
+	margin: 0;
+	position: sticky;
+	z-index: 1000;
+	margin-left: 0;
 }
 
 .header-content {
-  display: flex;
-  justify-content: space-between; 
-  font-size: 25px;
-  align-items: center; 
-  flex : 2 ; 
-
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	align-items: center;
+	flex: 2;
 }
 
 .logo img {
-  max-height: 100px; 
-  flex : 1 ;
+	max-height: 100px;
+	flex: 1;
 }
 
 .nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0; 
-  justify-items: center;  
- 
-
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-items: center;
 }
 
 .nav ul li {
-  margin: 0 10px;
-} 
-.nav ul li .cart{
-  flex : 3 ; 
-  right : 0 ; 
-  
+	margin: 0 10px;
+}
+.nav ul li .cart {
+	flex: 3;
+	right: 0;
 }
 
 .nav ul li a {
-  text-decoration: none;
-  color: #1e10bf;
-  font-weight: bold;
+	text-decoration: none;
+	color: #1e10bf;
+	font-weight: bold;
 }
 
 .nav ul li a:hover {
-  color:#3145fe;
+	color: #3145fe;
 }

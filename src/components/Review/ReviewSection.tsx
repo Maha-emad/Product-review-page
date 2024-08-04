@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ReviewForm from './ReviewFrom';
 import IndividualReview from './IndividualReview'; 
 import ReviewList from './ReviewList'; 
-import { Review } from '../types';
+import { Review } from '../types'; 
+import './Review.css';
 
 const ReviewSection: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
@@ -40,13 +41,13 @@ const ReviewSection: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className = 'review-section'>
       <h2>Customer Reviews</h2>
       {selectedReview ? (
         <IndividualReview review={selectedReview} onBack={handleBackToList} />
       ) : (
         <>
-          <div className="controls">
+          <div className="controls ">
             <label htmlFor="sort">Sort by:</label>
             <select id="sort" onChange={handleSortChange} value={sortOption}>
               <option value="date">Date</option>

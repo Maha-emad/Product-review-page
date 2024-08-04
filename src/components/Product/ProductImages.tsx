@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
+import { v4 as uuidv4 } from "uuid";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "./ProductImages.css";
-import { v4 as uuidv4 } from "uuid";
-
 interface ProductCarouselProps {
 	images: string[];
 }
@@ -44,8 +43,9 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ images }) => {
 	};
 
 	return (
-		<div className="carousel-container">
-			<Slider slidesToShow={1}  asNavFor={nav2} ref={(slider) => (sliderRef1.current = slider)}>
+		<div className="image-container">
+			<h2>Smart Watch Pro2i</h2>
+			<Slider arrows slidesToShow={1} asNavFor={nav2}  ref={(slider) => (sliderRef1.current = slider)}>
 				{images.map((image, index) => (
 					<div key={uuidv4()} className="carousel-slide">
 						<img src={image} alt={`Product ${index + 1}`} />

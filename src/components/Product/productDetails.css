@@ -1,0 +1,56 @@
+.details-container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.description {
+	padding: 20px;
+	text-align: left;
+}
+.product-features {
+	padding: 20px;
+	text-wrap: pretty;
+}
+.description h2 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+.description p {
+	font-size: 1.5rem;
+	text-wrap: pretty;
+}
+
+.feature-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.feature-list li {
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+}
+
+.feature-list li span {
+	margin-right: 8px;
+}
+
+.specifications {
+	margin-top: 20px;
+}
+
+.specifications h3 {
+	font-size: 1.5rem;
+}
+
+.specifications p {
+	font-size: 1rem;
+	margin: 5px 0;
+}
+
+.feature-list,
+.specifications {
+	text-align: left; /* Ensure lists are also left-aligned */
+}
