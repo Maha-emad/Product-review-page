@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .description {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .description h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feature-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .feature-list li span {
+    margin-right: 8px;
+  }
+  
+  .specifications {
+    margin-top: 20px;
+  }
+  
+  .specifications h3 {
+    font-size: 1.5rem;
+  }
+  
+  .specifications p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  .description {
+    flex: 1;
+    padding: 20px;
+    text-align: left; /* Explicitly left-align text */
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the container */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-list,
+  .specifications {
+    text-align: left; /* Ensure lists are also left-aligned */
+  }
+  
+ 

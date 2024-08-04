@@ -1,5 +1,7 @@
 import React from 'react';
-import './header.css';   
+import './header.css';    
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header: React.FC = () => {
@@ -13,9 +15,12 @@ const Header: React.FC = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/products">Products</a></li>
-            <li><a href="/wishs">Wishlist</a></li>
-            <li><a href="/about">Cart</a></li>
-          </ul>
+            <li><a href="/wishs">Wishlist</a></li> 
+            <li className='cart'><a href="/about"><FontAwesomeIcon icon={faShoppingCart} size="2x" color="#1e10bf"/></a></li>
+            
+          </ul> 
+
+          
         </nav>
       </div>
     </header>
