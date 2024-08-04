@@ -30,7 +30,7 @@ const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='review-form'onSubmit={handleSubmit}>
       <h3>Write a Review</h3>
       <div>
         <label htmlFor="name">Name:</label>
@@ -52,10 +52,10 @@ const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
         />
       </div>
       <div>
-        <label>Rating:</label>
-        <ReactStars
+        
+        <ReactStars className='react-stars'
           count={5}
-          size={24}
+          size={50}
           value={rating}
           onChange={setRating}
           color2={'#ffd700'}

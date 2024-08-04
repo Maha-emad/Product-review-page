@@ -8,7 +8,7 @@ interface ReviewListProps {
 
 const ReviewList: React.FC<ReviewListProps> = ({ reviews, onReviewClick }) => {
   return (
-    <div>
+    <div className='review-list'>
       {reviews.map((review) => (
         <div key={review.id} className="review" onClick={() => onReviewClick(review)}>
           <div className="review-header">
@@ -16,7 +16,7 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews, onReviewClick }) => {
             <span>{new Date(review.date).toLocaleDateString()}</span>
           </div>
           <div>
-            <span>Rating: {review.rating} / 5</span>
+            <span className='review-rating'>Rating: {review.rating} / 5</span>
           </div>
           <p>{review.comment}</p>
         </div>

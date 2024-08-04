@@ -1,12 +1,15 @@
-.carousel-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .carousel-slide img {
-    width: 100% ;
-    height: auto;
-    display: block;
-  }
-  
+.image-container {
+	width: 100%;
+	max-width: 500px;
+}
+.carousel-slide img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.slick-next::before {
+	color: green;
+}
+.slick-prev::before {
+	color: green;
+}

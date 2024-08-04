@@ -14,7 +14,7 @@ const IndividualReview: React.FC<IndividualReviewProps> = ({ review, onBack }) =
         <h3>{review.name}</h3>
         <span>{new Date(review.date).toLocaleDateString()}</span>
         <div>
-          <span>Rating: {review.rating} / 5</span>
+          <span className='rateing'>Rating: {review.rating} / 5</span>
         </div>
         <p>{review.comment}</p>
       </div>
